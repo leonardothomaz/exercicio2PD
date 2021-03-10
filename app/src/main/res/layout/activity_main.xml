@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#0019232E"
+    android:backgroundTintMode="src_over"
+    android:isScrollContainer="false"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/seasonIdentifier"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:autoText="false"
+        android:backgroundTint="#19232E"
+        android:isScrollContainer="false"
+        android:text="Season 2"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textIsSelectable="false"
+        android:textSize="16dp"
+        app:icon="@android:drawable/ic_menu_more"
+        app:iconGravity="textEnd"
+        app:iconPadding="-230dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serieName" />
+
+    <Button
+        android:id="@+id/playEpisode"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#1079AF"
+        android:elegantTextHeight="true"
+        android:isScrollContainer="false"
+        android:paddingLeft="0dp"
+        android:paddingRight="150dp"
+        android:text="Episode 1 Watch Now"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoPrimeIncluded" />
+
+    <Button
+        android:id="@+id/watchlist"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="88dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Watchlist"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        app:icon="@android:drawable/ic_menu_add"
+        app:iconGravity="top"
+        app:iconPadding="0dp"
+        app:iconSize="58dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toStartOf="@+id/complete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playEpisode" />
+
+    <Button
+        android:id="@+id/complete"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="88dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Complete"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        app:icon="@android:drawable/checkbox_on_background"
+        app:iconGravity="top"
+        app:iconPadding="0dp"
+        app:iconSize="58dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toStartOf="@+id/share"
+        app:layout_constraintStart_toEndOf="@+id/watchlist"
+        app:layout_constraintTop_toBottomOf="@+id/playEpisode" />
+
+    <Button
+        android:id="@+id/share"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="88dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="45dp"
+        android:text="Share"
+        android:textAllCaps="false"
+        app:icon="@android:drawable/ic_menu_share"
+        app:iconGravity="top"
+        app:iconPadding="0dp"
+        app:iconSize="58dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/complete"
+        app:layout_constraintTop_toBottomOf="@+id/playEpisode" />
+
+    <ImageView
+        android:id="@+id/Header"
+        android:layout_width="0dp"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="64dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seasonIdentifier"
+        app:srcCompat="@drawable/iconprime" />
+
+    <TextView
+        android:id="@+id/serieName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="The Boys"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Header" />
+
+    <TextView
+        android:id="@+id/infoPrimeIncluded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="Season 1-2 included with Prime"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/sinopse"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:elegantTextHeight="true"
+        android:text="All Episodes Avaliavble. In a more intense and more desperate second season of THE BOYS, Butcher, Hughie and the team recover from their losses in the first season. Fleeing the law, they suffer to fight the Superheroes. While Vought, the company that manages the heroes, panics at the threat of the Supervillains, and a new heroine, Stormfront, shakes the company and challenges an already unstable Homelander."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#fff"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complete"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout><!--</ScrollView>-->
